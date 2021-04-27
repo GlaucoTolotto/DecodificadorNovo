@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/reset.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <script src="./decodificador.js"></script>
+    <title>Decodificador</title>
+</head>
+<header>
+    <h1>decodificador</h1>
+</header>
+
+<body>
+    <div class="caixa">
+        <h2>Escreva aqui sua mensagem</h2>
+        <input type="text" id="texto">
+        <div class="select">
+            <select id="selecionar">
+                <option id="base64">Base 64</option>
+                <option id="cifraCesar">Cifra de Cesar</option>
+            </select>
+        </div>
+        <br>
+        <input type="radio" name="codificar" id="codificar">
+        <label for="codificar">Codificar</label>
+        <input type="radio" name="codificar" id="decodificar">
+        <label for="decodificar">Decodificar</label>
+        <h2>Selecione o Incremento Para Cifra de Cesar</h2>
+        <input type="number" id="incremento" required="required">
+        <div id="caixaMensagem">
+            <div class="caixaDeRetorno">
+                <button onclick="codificaGeral()"></button>
+                <div>
+                    <h2>Seu texto convertido virá aqui</h2>
+                    <div id="retorno"></div>
+                </div>
+
+            </div>
+        </div>
+</body>
+
+</html>
