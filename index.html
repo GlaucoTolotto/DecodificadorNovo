@@ -24,16 +24,19 @@
                 <option id="cifraCesar">Cifra de Cesar</option>
             </select>
         </div>
-        <br>
-        <input type="radio" name="codificar" id="codificar">
-        <label for="codificar">Codificar</label>
-        <input type="radio" name="codificar" id="decodificar">
-        <label for="decodificar">Decodificar</label>
-        <h2>Selecione o Incremento Para Cifra de Cesar</h2>
-        <input type="number" id="incremento" required="required">
+        <div class="escolherDecodEcod">
+            <input type="radio" name="codificar" id="codificar">
+            <label for="codificar">Codificar</label>
+            <input type="radio" name="codificar" id="decodificar">
+            <label for="decodificar">Decodificar</label>
+        </div>
+        <div class="containerIncremento">
+            <h2>Selecione o Incremento Para Cifra de Cesar</h2>
+            <input type="number" id="incremento" required="required">
+        </div>
         <div id="caixaMensagem">
             <div class="caixaDeRetorno">
-                <button onclick="codificaGeral()"></button>
+                <button onclick="codificaGeral()">Ver Resultado</button>
                 <div>
                     <h2>Seu texto convertido virá aqui</h2>
                     <div id="retorno"></div>
