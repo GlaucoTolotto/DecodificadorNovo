@@ -13,10 +13,10 @@ function codificaGeral() {
 
 
     else {
-        var mensagem = document.getElementById("texto").value;
+        var mensagem = document.getElementById("texto").value.toLowerCase();
         var resultado = document.getElementById("retorno");
         var chave = parseInt(document.getElementById("incremento").value);
-        if (document.getElementById("codificar")) {
+        if (document.getElementById("codificar").checked) {
             resultado.innerHTML = codificaCifra(mensagem, chave);
         }
         else {
@@ -24,8 +24,6 @@ function codificaGeral() {
         }
 
     }
-
-
 }
 
 // function mostrarIncr (){
